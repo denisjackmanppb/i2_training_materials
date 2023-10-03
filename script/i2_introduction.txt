@@ -1,0 +1,3 @@
+I2 is the common name given to the heritage Paddy Power private cloud platform. tooling and framework. 
+I2 stands for "Infrastructure Version 2" and was developed by Betfair in 2015 to help alleviates the many problems that were being experienced using the then existing platform. 
+It was adopted by the group and is used by some of the wider Flutter organisation. 
