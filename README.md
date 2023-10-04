@@ -11,3 +11,9 @@ Images are stored in the images directory.
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
+
+
+##  Links
+* [AWS training](https://ilearnppb.com/course/view.php?id=440)
+* [Training request form](https://forms.monday.com/forms/6c7cc033f922c2e6652bef9940c13e10?r=euc1)
+
