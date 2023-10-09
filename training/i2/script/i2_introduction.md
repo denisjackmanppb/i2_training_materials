@@ -40,3 +40,57 @@ Once the service has been created in JIRA and the YAML file has been created the
 * SDN load balancer and other framework details 
 This manifest allows you to revisit this particular build and rebuild it and deploy. This manifest is stored in Artifactory alongside any other artefacts that are created.
 run the Ansible playbooks. The playbooks will then deploy and configure the service on the target environment.
+
+# Presentation Notes:
+## Points of interest:
+* I2 is a private cloud platform developed by Betfair in 2015.
+* It is used by some of the wider Flutter organisation.
+* I2 utilises Openstack specifically OSP 16 as the automation middleware for all infrastructure and Ansible for orchestrations.
+* Each service has its own repository and is deployed in a mainly active/active manner.
+* I2 adheres to a number of principles, including 
+    - infrastructure as code, 
+    - self-service model for development teams, 
+    - immutable deployments, and 
+    - fail fast approach to development.
+* A number of tools are utilised in the automation of the platform, including 
+    - JIRA, 
+    - Gitlab,
+    - GitHub,
+    - Jenkins,
+    - Artifactory,
+    - Vault,
+    - Docker,
+    - Thoughtworks GoCD,
+    - Python,
+    - YAML, 
+    - Ansible, 
+    - Ruby, and 
+    - CHEF.
+* To onboard a service, a number of things need to happen, including:
+    - Creating the service in JIRA
+    - Creating a YAML file defining the service's infrastructure
+    - Making changes to the YAML file and committing the changes to the Gitlab/GitHub repo
+    - Raising a merge request for the changes
+    - Once the merge request is merged, a Jenkins job will be triggered to create a package with a JSON manifest file
+    - The manifest file is stored in Artifactory
+    - The Ansible playbooks are run to deploy and configure the service on the target environment
+## Expanded writing:
+I2 is a private cloud platform that was developed by Betfair in 2015 to help alleviate the many problems that were being experienced using the then existing platform. It was adopted by the group and is used by some of the wider Flutter organisation. I2 utilises Openstack specifically OSP 16 as the automation middleware for all infrastructure and Ansible for orchestrations.
+
+One of the key benefits of I2 is that it adheres to a number of principles, including infrastructure as code, self-service model for development teams, immutable deployments, and fail fast approach to development.
+
+* **Infrastructure as code**: This means that the infrastructure for each service is defined in a code file, such as a YAML file. This makes it easy to deploy and manage the infrastructure, and it also makes it easy to version control the infrastructure.
+* **Self-service model for development teams**: This means that development teams can deploy and manage their own services without having to rely on a separate infrastructure team. This makes development teams more agile and productive.
+* **Immutable deployments**: This means that each deployment of a service is treated as a new version of the service. This makes it easy to roll back to a previous version of the service if there is a problem with the new version.
+* **Fail fast approach to development**: This means that I2 is designed to fail quickly if there is a problem. This helps to prevent problems from propagating to other parts of the system.
+
+I2 is a powerful and flexible private cloud platform that can be used to deploy a wide range of services. It is used by some of the largest and most successful companies in the world, and it is a key part of the Flutter technology stack.
+## Additional thoughts:
+* I2 is a complex platform, and this presentation does not cover all of the details. However, it provides a good overview of the platform and its key features.
+* The presentation could be expanded to include more information about the following topics:
+    - The I2 Framework
+    - The automation process
+    - The onboarding process
+    - The different tools that are used with I2
+    - Case studies of how I2 is being used by Flutter and other companies
+The presentation could also be made more visually appealing by using more images and diagrams.
